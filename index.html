@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>張三｜企業 AI 應用開發／前端開發</title>
+  <meta name="description" content="企業 AI 應用開發／前端與工具開發。專注 Prompt、Rule、Skill、MCP、插件與自動化，並以 Vue、NestJS、PostgreSQL 落地交付。">
+  <!-- Open Graph：分享到 LinkedIn / 通訊軟體時的預覽 -->
+  <meta property="og:title" content="張三｜企業 AI 應用開發／前端開發">
+  <meta property="og:description" content="把 LLM 能力封裝成 Skill、MCP 與插件，接進企業工作流程。">
+  <meta property="og:image" content="images/placeholder.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== 導覽列 ========== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="主選單">
+      <a href="#hero" class="nav-logo">張三<span>.</span></a>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#skills">能力</a></li>
+        <li><a href="#projects">專案</a></li>
+        <li><a href="#stack">技術棧</a></li>
+        <li><a href="#experience">經歷</a></li>
+        <li><a href="#education">教育</a></li>
+        <li><a href="#contact" class="nav-cta">聯絡我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== 1. Hero / 個人資訊 ========== -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Hi，我是 張三 👋</p>
+          <h1 class="hero-title">企業 AI 應用開發<br><span>前端開發</span></h1>
+          <p class="hero-desc">
+            把 LLM 能力封裝成 <strong>Prompt / Rule / Skill</strong>，透過 <strong>MCP 與插件</strong>接進企業系統，
+            並用 Vue + NestJS + PostgreSQL 交付可上線的工具。
+          </p>
+          <ul class="hero-meta">
+            <li>📍 上海</li>
+            <li>💼 求職：企業 AI 應用開發／前端開發</li>
+            <li>🗓️ 到職：一個月內（待填）</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">查看專案</a>
+            <a href="https://github.com/yourname" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="mailto:zhangsan@example.com" class="btn btn-ghost">Email</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/placeholder.png" alt="專案截圖拼貼或 AI 工作流程示意圖" width="1600" height="900">
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="hero-stats">
+          <li><strong>5+</strong><span>落地 AI 工具</span></li>
+          <li><strong>XX h</strong><span>每週節省工時（待填）</span></li>
+          <li><strong>XX 人</strong><span>內部使用者（待填）</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 2. 核心能力 ========== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">我能解決的問題</h2>
+        <p class="section-sub">把技術轉成企業看得見的價值</p>
+        <div class="grid grid-4">
+          <article class="card skill-card">
+            <div class="skill-icon">🧠</div>
+            <h3>AI 能力工程化</h3>
+            <p>以 Prompt + Rule 約束輸出品質，封裝成可重用、可版本管理的 Skill。</p>
+            <p class="skill-link">→ <a href="#p-ppt">PPT 編寫助手</a>、<a href="#p-review">代碼審查</a></p>
+          </article>
+          <article class="card skill-card">
+            <div class="skill-icon">🔌</div>
+            <h3>AI 接入企業系統</h3>
+            <p>透過 MCP 與插件，讓 AI 安全讀寫內部文件、程式碼庫與業務資料。</p>
+            <p class="skill-link">→ <a href="#p-kb">知識庫助手</a>、<a href="#p-review">代碼審查</a></p>
+          </article>
+          <article class="card skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>重複工作自動化</h3>
+            <p>串接資料來源與排程，把日報、整理、彙總等重複工作交給 AI。</p>
+            <p class="skill-link">→ <a href="#p-daily">智能日報助手</a></p>
+          </article>
+          <article class="card skill-card">
+            <div class="skill-icon">🚀</div>
+            <h3>全端落地交付</h3>
+            <p>Vue 前端、NestJS API、PostgreSQL 資料層，從原型做到可維運的系統。</p>
+            <p class="skill-link">→ <a href="#p-admin">企業後台</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. 精選專案 ========== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">精選專案</h2>
+        <p class="section-sub">每個專案：痛點 → 解法 → 成果</p>
+
+        <div class="grid grid-projects">
+
+          <article class="card project-card" id="p-kb">
+            <img src="images/placeholder.png" alt="知識庫助手：問答介面與引用來源截圖" loading="lazy" width="1600" height="900">
+            <div class="project-body">
+              <h3>知識庫助手</h3>
+              <p class="project-oneline">讓員工用自然語言查詢內部文件，回答附帶引用來源。</p>
+              <dl class="project-detail">
+                <dt>痛點</dt><dd>文件散落各處，找資料平均耗時 XX 分鐘。</dd>
+                <dt>解法</dt><dd>文件匯入 → 切分與檢索 → LLM 生成回答並標註出處；透過 MCP 接入內部資料源。</dd>
+                <dt>成果</dt><dd>查詢時間縮短 XX%，回答命中率 XX%。（待填）</dd>
+              </dl>
+              <ul class="tags"><li>MCP</li><li>Prompt</li><li>Vue</li><li>NestJS</li><li>PostgreSQL</li></ul>
+              <p class="project-role">角色：獨立開發（待填）</p>
+              <div class="project-links">
+                <a href="https://github.com/yourname/knowledge-assistant" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Demo 影片 ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" id="p-review">
+            <img src="images/placeholder.png" alt="代碼審查與修復工具：diff 上的審查意見截圖" loading="lazy" width="1600" height="900">
+            <div class="project-body">
+              <h3>代碼審查與修復工具</h3>
+              <p class="project-oneline">自動審查程式碼變更，提出問題並產生修復建議。</p>
+              <dl class="project-detail">
+                <dt>痛點</dt><dd>人工 Code Review 耗時，常見問題反覆出現。</dd>
+                <dt>解法</dt><dd>以 Rule 定義團隊規範，封裝成 Skill；以插件形式整合進開發流程，輸出審查意見與 patch。</dd>
+                <dt>成果</dt><dd>修復建議採納率 XX%，Review 時間減少 XX%。（待填）</dd>
+              </dl>
+              <ul class="tags"><li>Rule</li><li>Skill</li><li>插件</li><li>MCP</li></ul>
+              <p class="project-role">角色：核心開發（待填）</p>
+              <div class="project-links">
+                <a href="https://github.com/yourname/code-review-tool" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" id="p-daily">
+            <img src="images/placeholder.png" alt="智能日報助手：自動產出的日報截圖" loading="lazy" width="1600" height="900">
+            <div class="project-body">
+              <h3>智能日報助手</h3>
+              <p class="project-oneline">整理飛書聊天紀錄、GitHub 提交紀錄和工作紀錄，生成結構化日報和週報。</p>
+              <dl class="project-detail">
+                <dt>痛點</dt><dd>每天手寫日報約 XX 分鐘，格式不一。（待填）</dd>
+                <dt>解法</dt><dd>透過飛書 CLI 與 GitHub 擷取紀錄，依資料結構彙整後生成日報／週報，並以校驗規則檢查輸出，匯出 Word。</dd>
+                <dt>成果</dt><dd>每人每日節省 XX 分鐘，XX 人使用。（待填）</dd>
+              </dl>
+              <ul class="tags"><li>Skill</li><li>飛書 CLI</li><li>GitHub</li><li>Word</li></ul>
+              <p class="project-role">角色：設計資料結構、生成流程和輸出校驗規則。</p>
+              <div class="project-links">
+                <a href="https://github.com/yourname/daily-report-assistant" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://yourname.github.io/daily-report-assistant" target="_blank" rel="noopener noreferrer">Demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" id="p-ppt">
+            <img src="images/placeholder.png" alt="PPT 編寫助手：大綱與產出投影片對照截圖" loading="lazy" width="1600" height="900">
+            <div class="project-body">
+              <h3>PPT 編寫助手</h3>
+              <p class="project-oneline">輸入主題或大綱，產出結構完整、套用企業範本的簡報。</p>
+              <dl class="project-detail">
+                <dt>痛點</dt><dd>簡報從零製作耗時，風格難以統一。</dd>
+                <dt>解法</dt><dd>拆分「大綱生成 → 內容擴寫 → 版面套用」為多個 Skill，以 Rule 控制頁數與文字密度。</dd>
+                <dt>成果</dt><dd>初稿產出時間從 XX 小時降到 XX 分鐘。（待填）</dd>
+              </dl>
+              <ul class="tags"><li>Skill</li><li>Prompt</li><li>Rule</li></ul>
+              <p class="project-role">角色：獨立開發（待填）</p>
+              <div class="project-links">
+                <a href="https://github.com/yourname/ppt-assistant" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" id="p-admin">
+            <img src="images/placeholder.png" alt="企業後台：儀表板主畫面截圖" loading="lazy" width="1600" height="900">
+            <div class="project-body">
+              <h3>企業後台</h3>
+              <p class="project-oneline">企業內部管理系統，含權限管理、資料維護與報表。</p>
+              <dl class="project-detail">
+                <dt>痛點</dt><dd>業務資料以 Excel 管理，權限與追溯困難。</dd>
+                <dt>解法</dt><dd>Vue 前端 + NestJS RESTful API + PostgreSQL，實作 RBAC 權限與操作紀錄。</dd>
+                <dt>成果</dt><dd>支撐 XX 個部門日常作業。（待填）</dd>
+              </dl>
+              <ul class="tags"><li>Vue</li><li>NestJS</li><li>PostgreSQL</li></ul>
+              <p class="project-role">角色：前後端開發（待填）</p>
+              <div class="project-links">
+                <span class="badge-private">企業內部專案・僅提供截圖</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. AI 應用工程方法 ========== -->
+    <section class="section" id="method">
+      <div class="container">
+        <h2 class="section-title">AI 應用工程方法</h2>
+        <p class="section-sub">不只是「調 Prompt」，而是可維護、可評估的工程流程</p>
+        <ol class="flow">
+          <li><strong>需求拆解</strong><span>釐清輸入、輸出與驗收標準</span></li>
+          <li><strong>Prompt 設計</strong><span>角色、任務、範例、輸出格式</span></li>
+          <li><strong>Rule 約束</strong><span>規範邊界，降低幻覺</span></li>
+          <li><strong>封裝 Skill</strong><span>可重用、可版本管理</span></li>
+          <li><strong>MCP／插件接入</strong><span>連接企業資料與工具</span></li>
+          <li><strong>評估迭代</strong><span>測試集、抽查、採納率</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== 5. 技術棧 ========== -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <h2 class="section-title">技術棧</h2>
+        <p class="section-sub">依實際專案使用分類</p>
+        <div class="grid grid-3">
+          <div class="card stack-card">
+            <h3>AI 工具與方法</h3>
+            <ul class="tags tags-lg"><li>Prompt</li><li>Rules</li><li>Skill</li><li>MCP</li><li>插件</li><li>自動化</li></ul>
+          </div>
+          <div class="card stack-card">
+            <h3>前端開發</h3>
+            <ul class="tags tags-lg"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vue</li></ul>
+          </div>
+          <div class="card stack-card">
+            <h3>服務端與資料庫</h3>
+            <ul class="tags tags-lg"><li>NestJS</li><li>PostgreSQL</li><li>Docker</li></ul>
+          </div>
+          <div class="card stack-card">
+            <h3>工程工具</h3>
+            <ul class="tags tags-lg"><li>Git</li><li>GitHub Pages</li><li>CI/CD</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. 經歷時間線 ========== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title">工作經歷</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-date">2024.03 – 至今</div>
+            <div class="timeline-content card">
+              <h3>AI 應用開發工程師</h3>
+              <p class="timeline-org">公司名稱（待填）</p>
+              <ul>
+                <li>主導知識庫助手、代碼審查工具等 X 個 AI 工具從需求到上線。</li>
+                <li>設計團隊共用的 Prompt / Rule / Skill 規範，提升產出一致性。</li>
+                <li>透過 MCP 與插件整合內部系統，覆蓋 XX 位使用者。</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2022.07 – 2024.02</div>
+            <div class="timeline-content card">
+              <h3>前端／全端工程師</h3>
+              <p class="timeline-org">公司名稱（待填）</p>
+              <ul>
+                <li>以 Vue + NestJS + PostgreSQL 開發企業後台系統。</li>
+                <li>實作 RBAC 權限、報表與操作紀錄模組。</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== 7. 教育背景 ========== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title">教育背景</h2>
+        <div class="grid grid-2">
+          <article class="card edu-card">
+            <div class="edu-date">2018 – 2022</div>
+            <h3>學校名稱（待填）</h3>
+            <p>資訊工程學系・學士</p>
+            <p class="edu-note">相關課程：資料結構、資料庫系統、軟體工程（待填）</p>
+          </article>
+          <article class="card edu-card">
+            <div class="edu-date">證照／課程</div>
+            <h3>進修與證照（待填）</h3>
+            <p>例如：AI 應用開發相關課程、雲端證照</p>
+            <p class="edu-note">可放證書連結或線上課程頁面</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. 聯絡方式 ========== -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title">聯絡我</h2>
+        <p class="section-sub">正在尋找企業 AI 應用開發／前端與工具開發職位，歡迎聯繫。</p>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:zhangsan@example.com" class="contact-item">
+              <span class="contact-icon">✉️</span><span>zhangsan@example.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/yourname" class="contact-item" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon">🐙</span><span>github.com/yourname ↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://your-blog.example.com" class="contact-item" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon">📝</span><span>Blog ↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+886900000000" class="contact-item">
+              <span class="contact-icon">📞</span><span>+886 900-000-000</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> 張三・Deployed on GitHub Pages</p>
+      <a href="#top" class="back-to-top">回到頂部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
